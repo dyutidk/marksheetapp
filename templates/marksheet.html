@@ -1,0 +1,88 @@
+{% extends 'layout.html' %}
+{% block sblock %}
+<div class="container">
+    <hr>
+    <p style="text-align: center"><h5>Generate your marklist in 3 simple steps:</h5><br>
+        <ol>
+            <li>Enter your name, register number, semester and college name</li>
+            <li>Provide your subject names,marks obtained and total marks in the table provided.</li>
+            <li>Click Submit</li>
+        </ol>
+    </p>
+    <hr>
+    <form type="form" method="POST" action="/result" style="background: wheat;padding: 2%;margin: auto;padding: 2%">
+        <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+                <div class="row" style="margin:auto">
+                        <div class="col-sm-6"><b>Name</b></div>
+                        <div class="col-sm-6"><input type="text" name="name" class="form-control"/></div>
+                    </div><br>
+                <div class="row" style="margin:auto">
+                    <div class="col-sm-6"><b>Reg.No</b></div>
+                    <div class="col-sm-6"><input type="text" name="regno" class="form-control"/></div>
+                </div><br>
+                    <div class="row" style="margin:auto">
+                        <div class="col-sm-6"><b>Semester</b></div>
+                        <div class="col-sm-6">
+                            <select name="semester">
+                                <option>--select--</option>
+                                <option value="Semester 1">Semester 1</option>
+                                <option value="Semester 2">Semester 2</option>
+                                <option value="Semester 3">Semester 3</option>
+                                <option value="Semester 4">Semester 4</option>
+                                <option value="Semester 5">Semester 5</option>
+                                <option value="Semester 6">Semester 6</option>
+                                <option value="Semester 7">Semester 7</option>
+                                <option value="Semester 8">Semester 8</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="row" style="margin:auto">
+                        <div class="col-sm-6"><b>College</b></div>
+                        <div class="col-sm-6"><input type="text" name="college" class="form-control"/></div>
+                    </div><br>
+                    <div>
+                        <table class="table-bordered text-center" style="margin:auto">
+                            <thead class="thead-dark" style="background:white">
+                                <tr class="table">
+                                    <th>Subject</th>
+                                    <th>Mark Obtained</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="subject1" class="form-control"></td>
+                                    <td><input type="number" name="mark1" class="form-control"></td>
+                                    <td><input type="number" name="t1" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="subject2" class="form-control"></td>
+                                    <td><input type="number" name="mark2" class="form-control"></td>
+                                    <td><input type="number" name="t2" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="subject3" class="form-control"></td>
+                                    <td><input type="number" name="mark3" class="form-control"></td>
+                                    <td><input type="number" name="t3" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="subject4" class="form-control"></td>
+                                    <td><input type="number" name="mark4" class="form-control"></td>
+                                    <td><input type="number" name="t4" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+                    </div>
+                    <div class="row"><button style="margin:auto;background:#795548;color:white" class="button" type="submit" >Submit</button></div>
+                    <br>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+        
+    </form><br>
+</div>
+{% endblock %}
+            
+       

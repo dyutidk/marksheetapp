@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+{% block sblock %}
+    <div class="container">
+        <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="card bg-light mb-3" style="margin: auto">
+                        <div class="card-header" style="text-align:center"><h4>Marklist</h4></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">Name : {{n}}</div>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-4">Reg.No : {{r}}</div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-sm-6">Semester : {{s}}</div>
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-4">College : {{c}}</div>
+                            </div><br>
+                            <div class="row">
+                                <table class="table" style="text-align:center">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Mark Obtained</th>
+                                            <th>Total Marks</th>
+                                            <th>Grade</th>
+                        
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{s1}}</td>
+                                            <td>{{s1m}}</td>
+                                            <td>{{s1t}}</td>
+                                            <td>{{g1}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{s2}}</td>
+                                            <td>{{s2m}}</td>
+                                            <td>{{s2t}}</td>
+                                            <td>{{g2}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{s3}}</td>
+                                            <td>{{s3m}}</td>
+                                            <td>{{s3t}}</td>
+                                            <td>{{g3}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{s4}}</td>
+                                            <td>{{s4m}}</td>
+                                            <td>{{s4t}}</td>
+                                            <td>{{g4}}</td>
+                                        </tr>
+                                </tbody>
+                    
+                            </table>
+                        </div><br>
+                    </div>
+                    <div class="card-footer text-muted" style="text-align:center">
+                        <div class="col"><b>Semester Result : {{status}}</b></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div> 
+        </div>
+    </div>
+{% endblock %}    
+            
+            
+            
+            
+            
